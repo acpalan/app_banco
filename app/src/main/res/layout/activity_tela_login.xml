@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".telas.TelaLogin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="-40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="143dp"
+            android:layout_height="147dp"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edit_Login"
+            style="@style/Edit_Text"
+            android:layout_marginTop="28dp"
+            android:drawableRight="@drawable/ic_email"
+            android:hint="Nome"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo"/>
+
+        <EditText
+            android:id="@+id/edit_Senha"
+            style="@style/Edit_Text"
+            android:drawableRight="@drawable/ic_senha"
+            android:hint="Senha"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_Login"/>
+
+
+        <Button
+            android:background="@drawable/rounded_button"
+            android:id="@+id/btnLogin"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="18dp"
+            android:text="Logar"
+            app:layout_constraintEnd_toEndOf="@id/edit_Senha"
+            app:layout_constraintStart_toStartOf="@id/edit_Senha"
+            app:layout_constraintTop_toBottomOf="@id/edit_Senha" />
+
+        <TextView
+            android:id="@+id/txtCadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar novo usuário"
+            android:textColor="#314E85"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnLogin"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
